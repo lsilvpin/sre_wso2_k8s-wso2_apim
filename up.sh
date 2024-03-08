@@ -10,6 +10,9 @@ docker build \
     -f Base.Dockerfile \
     .
 
+# Create directory data if it does not exist
+mkdir -p data
+
 # Run the Docker container
 docker run \
     --name wso2-api-manager \
